@@ -1,6 +1,5 @@
 from song import Song
 
-
 song_list = [
             
             Song('I Miss You', 'Blink 182'), 
@@ -8,5 +7,5 @@ song_list = [
             Song('Yellow', 'Coldplay'),
             Song('Many of Horror', 'Biffy Clyro'),
             Song('Agadoo', 'Black Lace')
-            
+
             ]

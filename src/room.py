@@ -27,6 +27,7 @@ class Room:
     def check_out_guests(self):
         self.guests = []
         self.songs = []
+        self.tab = 0
 
     def add_song(self, song):
         self.songs.append(song)
@@ -38,4 +39,7 @@ class Room:
 
     def add_drink_to_tab(self,drink):
         self.tab += drink
+
+    def add_drink(self, amount):
+        self.tab += amount
 
