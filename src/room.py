@@ -20,12 +20,13 @@ class Room:
     def check_in_guest(self, guest):
         if len(self.guests) < self.capacity:
             self.guests.append(guest)
-            guest.wallet -= self.cost
+            guest.reduce_wallet(self.cost)
         else:
-            pass
+            print('Sorry, that room is full')
 
     def check_out_guests(self):
         self.guests = []
+        self.songs = []
 
     def add_song(self, song):
         self.songs.append(song)

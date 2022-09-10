@@ -16,7 +16,7 @@ class TestRoom(unittest.TestCase):
     def test_check_room_name(self):
         self.assertEqual('Albert Hall', self.room.check_room_name())
 
-    def test_check_numbe_of_guest(self):
+    def test_check_number_of_guest(self):
         self.room.guests.append(self.guest_1)
         self.room.guests.append(self.guest_2)
         self.assertEqual(2, self.room.check_number_of_guest())
